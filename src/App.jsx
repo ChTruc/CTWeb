@@ -4,6 +4,12 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 // () => {} -- Cú pháp của Arrow Function
+//component = html + css + javasript
+
+const MyComponent = () => {
+  return <div> Nguyễn Thành Chánh Trực </div>;
+};
+
 const App = () => {
   const [count, setCount] = useState(0);
 
@@ -18,6 +24,7 @@ const App = () => {
         </a>
       </div>
       <h1>CTWeb</h1>
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
